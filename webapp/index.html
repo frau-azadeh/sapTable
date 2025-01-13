@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My UI5 Table App</title>
-  
-  <script id="sap-ui-bootstrap"
-    src="https://ui5.sap.com/resources/sap-ui-core.js"
-    data-sap-ui-libs="sap.m,sap.ui.core"
-    data-sap-ui-theme="sap_fiori_3"
-    data-sap-ui-compatVersion="edge"
-    data-sap-ui-resourceroots='{
-      "sap.ui.demo.Table": "./"
-    }'
-  ></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Table - Item Navigated</title>
 
-  <style>
-    html, body { height: 100%; }
-  </style>
+	<script id="sap-ui-bootstrap"
+		src="resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_horizon"
+		data-sap-ui-resourceroots='{
+			"sap.m.sample.TableNavigated": "./",
+			"sap.ui.demo.mock": "mockdata"
+		}'
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true"
+		data-sap-ui-frameOptions="trusted"
+		data-sap-ui-oninit="module:sap/ui/core/ComponentSupport">
+	</script>
+
+	<style>
+		html, body { height: 100%; }
+	</style>
 </head>
-<body class="sapUiBody" id="content">
-  <div id="content"></div>
+
+<body class="sapUiBody sapUiSizeCozy" id="content">
+	<div data-sap-ui-component
+		data-name="sap.m.sample.TableNavigated"
+		data-height="100%"
+		data-id="container"
+		data-settings='{"id" : "sap.m.sample.TableNavigated"}'
+		style="height: 100%">
+	</div>
 </body>
 </html>

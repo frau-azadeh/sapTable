@@ -1,28 +1,31 @@
 {
-	"_version": "1.21.0",
 	"sap.app": {
-	  "id": "sap.ui.demo.Table",
-	  "type": "application",
-	  "applicationVersion": {
-		"version": "1.0.0"
-	  },
-	  "title": "My UI5 Table App",
-	  "description": "An app to demonstrate a filterable table",
-	  "dataSources": {}
+		"id": "sap.m.sample.TableNavigated",
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
 	},
 	"sap.ui5": {
-	  "rootView": {
-		"viewName": "sap.ui.demo.Table.view.Table",
-		"type": "XML",
-		"async": true,
-		"id": "table"
-	  },
-	  "dependencies": {
-		"libs": {
-		  "sap.m": {},
-		  "sap.ui.core": {}
+		"rootView": {
+			"viewName": "sap.m.sample.TableNavigated.Table",
+			"type": "XML",
+			"async": true
+		},
+		"dependencies": {
+			"libs": {
+				"sap.m": {},
+				"sap.ui.core": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"config": {
+			"sample": {
+				"files": [
+					"Table.view.xml",
+					"Table.controller.js",
+					"manifest.json"
+				]
+			}
 		}
-	  }
 	}
-  }
-  
+}
