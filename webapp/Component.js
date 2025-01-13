@@ -1,14 +1,11 @@
-sap.ui.define(['sap/ui/core/UIComponent'],
-	function(UIComponent) {
-	"use strict";
-
-	var Component = UIComponent.extend("sap.m.sample.TableNavigated.Component", {
-
-		metadata : {
-			manifest: "json"
-		}
-	});
-
-	return Component;
-
-});
+sap.ui.define([
+    "sap/ui/core/UIComponent"
+],   
+    function(UIComponent){
+        "use strict";
+        return UIComponent.extend("sap.m.sample.TableNavigated.Component",{
+            metadata:{
+                manifest:"json"
+            }
+        })
+})
