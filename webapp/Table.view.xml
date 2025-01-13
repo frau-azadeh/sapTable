@@ -1,0 +1,33 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="sap.ui.demo.Table.controller.Table">
+    
+    <Table id="table" items="{
+        path: '/Products'
+    }">
+        <headerToolbar>
+            <Toolbar>
+                <Title text="Product Table" />
+            </Toolbar>
+        </headerToolbar>
+        
+        <columns>
+            <Column>
+                <Text text="Product Name" />
+            </Column>
+            <Column>
+                <Text text="Price" />
+            </Column>
+        </columns>
+        
+        <items>
+            <ColumnListItem>
+                <cells>
+                    <Text text="{ProductName}" />
+                    <Text text="{Price}" />
+                </cells>
+            </ColumnListItem>
+        </items>
+    </Table>
+</mvc:View>
